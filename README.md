@@ -99,7 +99,7 @@ Download
 ========
  * Windows releases: https://github.com/tpruvot/cpuminer-multi/releases
  * Git tree:   https://github.com/tpruvot/cpuminer-multi
-   * Clone with `git clone https://github.com/tpruvot/cpuminer-multi`
+   * Clone with `git clone https://github.com/ailantus/ccminer-armbian.git`
 
 Build
 =====
