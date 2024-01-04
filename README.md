@@ -1,22 +1,6 @@
 CPUMiner-Multi
 ==============
 
-[![Build Status](https://travis-ci.org/tpruvot/cpuminer-multi.svg)](https://travis-ci.org/tpruvot/cpuminer-multi)
-
-This is a multi-threaded CPU miner,
-fork of [pooler](//github.com/pooler)'s cpuminer (see AUTHORS for list of contributors).
-
-#### Table of contents
-
-* [Algorithms](#algorithms)
-* [Dependencies](#dependencies)
-* [Download](#download)
-* [Build](#build)
-* [Usage instructions](#usage-instructions)
-* [Donations](#donations)
-* [Credits](#credits)
-* [License](#license)
-
 Algorithms
 ==========
 #### Currently supported
@@ -83,9 +67,6 @@ Algorithms
  * ? rainforest
  * ? shavite3 (INKcoin)
  * ? __yescryptr8__ __yescryptr16__ and __yescryptr32__ variants
-
-#### Planned support for
- * *scrypt-jane* (YaCoin, CopperBars, Pennies, Tickets, etc..)
  
 Dependencies
 ============
@@ -105,23 +86,6 @@ Download & Build
    * ./install.sh
 
  
-#### Note for OS X users:
-
-```
- brew install openssl curl
- ./build.sh # if curl was installed to /usr/local/opt, else update build.sh paths in darwin section
-```
-
-#### Note for pi64 users:
-
-```
- ./autogen.sh
- ./configure --disable-assembly CFLAGS="-Ofast -march=native" --with-crypto --with-curl
-```
-
-#### Notes for AIX users:
- * To build a 64-bit binary, export OBJECT_MODE=64
- * GNU-style long options are not supported, but are accessible via configuration file
 
 #### Basic Windows build with Visual Studio 2013
  * All the required .lib files are now included in tree (windows only)
